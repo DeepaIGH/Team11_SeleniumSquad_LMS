@@ -142,7 +142,7 @@ public class LoginPage {
 		 Tesseract tesseract=new Tesseract();
 		 
 		 //set dataPath and language
-		 tesseract.setDatapath("C:\\Users\\OVI\\git\\Team11_SeleniumSquad_LMS\\tessdata");
+		 tesseract.setDatapath("./tessdata");
 		 tesseract.setLanguage("eng");
 		 
 		 //// Extract text using Tesseract OCR
