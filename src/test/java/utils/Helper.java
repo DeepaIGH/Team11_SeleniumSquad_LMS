@@ -76,6 +76,10 @@ public class Helper {
 		}
 
 	}
+	public static void waitForElement(WebDriver driver, WebElement element, int timeoutInSeconds, ExpectedCondition<WebElement> condition) {
+	    new WebDriverWait(driver, Duration.ofSeconds(timeoutInSeconds))
+	        .until(condition);
+	}
 		
 	public void waitForElement(WebElement element) {
 		new WebDriverWait(driver, Duration.ofSeconds(10)).until(ExpectedConditions.visibilityOf(element));
