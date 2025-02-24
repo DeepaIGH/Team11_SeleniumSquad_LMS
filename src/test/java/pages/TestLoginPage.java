@@ -14,7 +14,7 @@ public class TestLoginPage {
 	By Login = By.xpath("//button[@id='login']");
 	By dashboard=By.xpath("//div[@class='box']");
 	
-	public TestLoginPage(WebDriver driver) {
+	public TestLoginPage() {
 		this.driver = driver;
 	}
 	public void loginUsingValues(String username,String password) {
