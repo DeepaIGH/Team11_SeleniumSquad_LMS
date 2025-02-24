@@ -1,13 +1,8 @@
 Feature: Class Page Validation
 
-#Background: 
-     #
-    #Given User enters the LMS url "https://feb-ui-hackathon-bbfd38d67ea9.herokuapp.com/login"
-    #And enters username "sdetnumpyninja@gmail.com" and password "Feb@2025" and select role as Admin
-    #When user clicks login button
-    
-   @tag151
+ @tag151
     Scenario: Validating the class manage page
+    Given Admin Logged on to the system and on Home page
     When Admin clicks the Class Navigation bar in the Header class page
     Then Admin should land on the Manage class page
     
