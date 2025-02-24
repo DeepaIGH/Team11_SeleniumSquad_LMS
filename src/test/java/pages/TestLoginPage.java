@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 import driverFactory.DriverFactory;
+import utils.ConfigReader;
 
 public class TestLoginPage {
 	public WebDriver driver = DriverFactory.getdriver();
@@ -16,11 +17,12 @@ public class TestLoginPage {
 	By Login = By.xpath("//button[@id='login']");
 	By dashboard=By.xpath("//div[@class='box']");
 	
-	public TestLoginPage(WebDriver driver) {
+	public TestLoginPage() {
 		this.driver = driver;
 	}
 	public void loginUsingValues(String username,String password) {
 	//driver.findElement(UserName).clear();
+		driver.get(ConfigReader.getHomePageUrl());
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 			driver.findElement(UserName).sendKeys(username);
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
