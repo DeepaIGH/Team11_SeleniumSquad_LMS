@@ -33,7 +33,7 @@ public class ConfigReader {
 			throw new RuntimeException("Browser is  not specified in the Configuration.properties file.");
 	}
 	public static String getExcelFilePath() {
-		String excelfilelpath = prop.getProperty("excelFilePath");
+		String excelfilelpath = prop.getProperty("excelfilepath");
 		if (excelfilelpath != null)
 			return excelfilelpath;
 		else
@@ -49,7 +49,7 @@ public class ConfigReader {
 			throw new RuntimeException("HomePageurl not specified in the Config.properties file");
 	}
 	public static String getDashboardPageUrl() {
-		String dashboardPageURL = prop.getProperty("dashboardURL");
+		String dashboardPageURL = prop.getProperty("homepageURL");
 		if (dashboardPageURL != null)
 			return dashboardPageURL;
 		else
@@ -85,6 +85,22 @@ public class ConfigReader {
 			return userPageurl;
 		else
 			throw new RuntimeException("userPageurl not specified in the Config.properties file");
+	}
+	
+	public static String getUsername() {
+		String username = prop.getProperty("user");
+		if (username != null)
+			return username;
+		else
+			throw new RuntimeException("username not specified in the Config.properties file");
+	}
+	
+	public static String getPassword() {
+		String password = prop.getProperty("password");
+		if (password != null)
+			return password;
+		else
+			throw new RuntimeException("password not specified in the Config.properties file");
 	}
 }
 

@@ -97,89 +97,31 @@
 <artifactId>poi</artifactId>
 <version>5.3.0</version>
 </dependency>
+
+		<dependency>
+			<groupId>commons-lang</groupId>
+			<artifactId>commons-lang</artifactId>
+			<version>2.6</version> <!-- or the latest version -->
+		</dependency>
+		<dependency>
+			<groupId>net.sf.jazzy</groupId>
+			<artifactId>jazzy</artifactId>
+			<version>0.5.2-rtext-1.4.1-2</version>
+		</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/net.sourceforge.tess4j/tess4j -->
 <dependency>
-<groupId>org.apache.poi</groupId>
-<artifactId>poi-ooxml</artifactId>
-<version>5.3.0</version>
+    <groupId>net.sourceforge.tess4j</groupId>
+    <artifactId>tess4j</artifactId>
+    <version>5.11.0</version>
 </dependency>
-<!--  SLF4J logging  -->
+
+<!-- https://mvnrepository.com/artifact/de.niklasfi.aocr/aocr -->
 <dependency>
-<groupId>org.slf4j</groupId>
-<artifactId>slf4j-api</artifactId>
-<version>2.0.9</version>
+    <groupId>de.niklasfi.aocr</groupId>
+    <artifactId>aocr</artifactId>
+    <version>2.4</version>
 </dependency>
-<dependency>
-<groupId>org.slf4j</groupId>
-<artifactId>slf4j-simple</artifactId>
-<version>2.0.16</version>
-</dependency>
-<!--  Allure Reporting  -->
-<dependency>
-<groupId>io.qameta.allure</groupId>
-<artifactId>allure-cucumber7-jvm</artifactId>
-<version>2.29.1</version>
-</dependency>
-<!--  Extent Reports  -->
-<dependency>
-<groupId>tech.grasshopper</groupId>
-<artifactId>extent-pdf-report</artifactId>
-<version>2.12.0</version>
-</dependency>
-<dependency>
-<groupId>tech.grasshopper</groupId>
-<artifactId>cucumber-extent-generator</artifactId>
-<version>1.0.2</version>
-</dependency>
-<dependency>
-<groupId>tech.grasshopper</groupId>
-<artifactId>extentreports-cucumber7-adapter</artifactId>
-<version>1.14.0</version>
-</dependency>
-<dependency>
-<groupId>com.aventstack</groupId>
-<artifactId>extentreports</artifactId>
-<version>5.1.2</version>
-</dependency>
-<!--  Log4j dependencies for logging  -->
-<dependency>
-<groupId>org.apache.logging.log4j</groupId>
-<artifactId>log4j-core</artifactId>
-<version>2.24.2</version>
-</dependency>
-<dependency>
-<groupId>org.apache.logging.log4j</groupId>
-<artifactId>log4j-api</artifactId>
-<version>2.24.2</version>
-</dependency>
-<!--  Lombok dependency  -->
-<dependency>
-<groupId>org.projectlombok</groupId>
-<artifactId>lombok</artifactId>
-<version>1.18.24</version>
-<!--  Ensure this is compatible with your JDK version  -->
-<scope>provided</scope>
-</dependency>
-<!--  XMLBeans  -->
-<dependency>
-<groupId>org.apache.xmlbeans</groupId>
-<artifactId>xmlbeans</artifactId>
-<version>5.2.2</version>
-</dependency>
-<!--  Commons Dependencies  -->
-<dependency>
-<groupId>org.apache.commons</groupId>
-<artifactId>commons-collections4</artifactId>
-<version>4.4</version>
-</dependency>
-<dependency>
-<groupId>org.apache.commons</groupId>
-<artifactId>commons-compress</artifactId>
-<version>1.27.1</version>
-</dependency>
-<dependency>
-<groupId>commons-io</groupId>
-<artifactId>commons-io</artifactId>
-<version>2.18.0</version>
-</dependency>
-</dependencies>
+
+  </dependencies>
 </project>

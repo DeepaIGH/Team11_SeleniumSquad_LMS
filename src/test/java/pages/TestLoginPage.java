@@ -1,8 +1,10 @@
 package pages;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import java.time.Duration;
+
 import driverFactory.DriverFactory;
 
 public class TestLoginPage {
