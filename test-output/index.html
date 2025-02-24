@@ -7,7 +7,7 @@
 
     <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
     <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
-    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="jquery.min.js"></script>
     <script type="text/javascript" src="testng-reports.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type='text/javascript'>
@@ -21,11 +21,12 @@
      -->
   </head>
 
-  <body>    <div class="top-banner-root">
+  <body>
+    <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\OVI\AppData\Local\Temp\testng-eclipse-795521023\testng-customsuite.xml</span>
+                    <span>testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +93,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">31 methods, 2 failed,   29 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify the Search button&quot;, &quot;Manage Program Page validation&quot;)">runScenario("Verify the Search button", "Manage Program Page validation")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify footer message in manage program&quot;, &quot;Manage Program Page validation&quot;)">runScenario("Verify footer message in manage program", "Manage Program Page validation")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,7 +123,147 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify enter program name&quot;, &quot;Add New Program&quot;)">runScenario("Verify enter program name", "Add New Program")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify checkbox default state beside Program Name column header&quot;, &quot;Manage Program Page validation&quot;)">runScenario("Verify checkbox default state beside Program Name column header", "Manage Program Page validation")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify heading in manage program&quot;, &quot;Manage Program Page validation&quot;)">runScenario("Verify heading in manage program", "Manage Program Page validation")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify Logout displayed in menu bar&quot;, &quot;Navigation to Program page and Menu Bar Validations&quot;)">runScenario("Verify Logout displayed in menu bar", "Navigation to Program page and Menu Bar Validations")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify edit and delete icon in manage program&quot;, &quot;Manage Program Page validation&quot;)">runScenario("Verify edit and delete icon in manage program", "Manage Program Page validation")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify other pages name displayed in menu bar&quot;, &quot;Navigation to Program page and Menu Bar Validation...)">runScenario("Verify other pages name displayed in menu bar", "Navigation to Program page and Menu Bar Validation...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify column header name of data table&quot;, &quot;Manage Program Page validation&quot;)">runScenario("Verify column header name of data table", "Manage Program Page validation")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify other pages name displayed in menu bar&quot;, &quot;Navigation to Program page and Menu Bar Validation...)">runScenario("Verify other pages name displayed in menu bar", "Navigation to Program page and Menu Bar Validation...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify cancel button&quot;, &quot;Add New Program&quot;)">runScenario("Verify cancel button", "Add New Program")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify heading in menu bar&quot;, &quot;Navigation to Program page and Menu Bar Validations&quot;)">runScenario("Verify heading in menu bar", "Navigation to Program page and Menu Bar Validations")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify Admin is able to save the program details&quot;, &quot;Add New Program&quot;)">runScenario("Verify Admin is able to save the program details", "Add New Program")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify title of the pop up window&quot;, &quot;Add New Program&quot;)">runScenario("Verify title of the pop up window", "Add New Program")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify that Admin is able to navigate to Program page&quot;, &quot;Navigation to Program page and Menu Bar Va...)">runScenario("Verify that Admin is able to navigate to Program page", "Navigation to Program page and Menu Bar Va...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify other pages name displayed in menu bar&quot;, &quot;Navigation to Program page and Menu Bar Validation...)">runScenario("Verify other pages name displayed in menu bar", "Navigation to Program page and Menu Bar Validation...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify other pages name displayed in menu bar&quot;, &quot;Navigation to Program page and Menu Bar Validation...)">runScenario("Verify other pages name displayed in menu bar", "Navigation to Program page and Menu Bar Validation...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify the Multiple Delete button state&quot;, &quot;Manage Program Page validation&quot;)">runScenario("Verify the Multiple Delete button state", "Manage Program Page validation")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify column header name of data table&quot;, &quot;Manage Program Page validation&quot;)">runScenario("Verify column header name of data table", "Manage Program Page validation")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify add New Program&quot;, &quot;Add New Program&quot;)">runScenario("Verify add New Program", "Add New Program")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify sub menu displayed in program menu bar&quot;, &quot;Navigation to Program page and Menu Bar Validation...)">runScenario("Verify sub menu displayed in program menu bar", "Navigation to Program page and Menu Bar Validation...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;login feature&quot;, &quot;Test login functionality&quot;)">runScenario("login feature", "Test login functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify Sort icon in manage program&quot;, &quot;Manage Program Page validation&quot;)">runScenario("Verify Sort icon in manage program", "Manage Program Page validation")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify pagination icons below data table in manage program&quot;, &quot;Manage Program Page validation&quot;)">runScenario("Verify pagination icons below data table in manage program", "Manage Program Page validation")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify empty form submission&quot;, &quot;Add New Program&quot;)">runScenario("Verify empty form submission", "Add New Program")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify enter program Description&quot;, &quot;Add New Program&quot;)">runScenario("Verify enter program Description", "Add New Program")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify other pages name displayed in menu bar&quot;, &quot;Navigation to Program page and Menu Bar Validation...)">runScenario("Verify other pages name displayed in menu bar", "Navigation to Program page and Menu Bar Validation...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify column header name of data table&quot;, &quot;Manage Program Page validation&quot;)">runScenario("Verify column header name of data table", "Manage Program Page validation")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify mandatory fields with red asterisk mark&quot;, &quot;Add New Program&quot;)">runScenario("Verify mandatory fields with red asterisk mark", "Add New Program")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify column header name of data table&quot;, &quot;Manage Program Page validation&quot;)">runScenario("Verify column header name of data table", "Manage Program Page validation")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify close window with &quot;X&quot;&quot;, &quot;Add New Program&quot;)">runScenario("Verify close window with "X"", "Add New Program")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -118,6 +278,56 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">runner.TestRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify the Search button&quot;, &quot;Manage Program Page validation&quot;)">
+                  </a> <!-- runScenario("Verify the Search button", "Manage Program Page validation") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify the Search button", "Manage Program Page validation")</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Search...] but found []
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at stepDefinitions.ProgramPageValidSteps.admin_should_see_search_bar_with_text_as(ProgramPageValidSteps.java:36)
+	at ✽.Admin should see Search bar with text as &quot;Search...&quot;(file:///Users/arpanagodi/git/Team11_SeleniumSquad_LMS/src/test/resources/features/3_2_Program_PageValidation.feature:22)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify footer message in manage program&quot;, &quot;Manage Program Page validation&quot;)">
+                  </a> <!-- runScenario("Verify footer message in manage program", "Manage Program Page validation") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify footer message in manage program", "Manage Program Page validation")</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [In total there are z programs.] but found [In total there are 80 programs.]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at stepDefinitions.ProgramPageValidSteps.admin_should_see_the_footer_as_z_total_number_of_records(ProgramPageValidSteps.java:61)
+	at ✽.Admin should see the footer as &quot;In total there are z programs.&quot; z- Total number of records&quot;(file:///Users/arpanagodi/git/Team11_SeleniumSquad_LMS/src/test/resources/features/3_2_Program_PageValidation.feature:38)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -126,10 +336,290 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="runScenario(&quot;Verify enter program name&quot;, &quot;Add New Program&quot;)">
+                  </a> <!-- runScenario("Verify enter program name", "Add New Program") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify enter program name", "Add New Program")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify checkbox default state beside Program Name column header&quot;, &quot;Manage Program Page validation&quot;)">
+                  </a> <!-- runScenario("Verify checkbox default state beside Program Name column header", "Manage Program Page validation") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify checkbox default state beside Program Name column header", "Manage Program Page validation")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify heading in manage program&quot;, &quot;Manage Program Page validation&quot;)">
+                  </a> <!-- runScenario("Verify heading in manage program", "Manage Program Page validation") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify heading in manage program", "Manage Program Page validation")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify Logout displayed in menu bar&quot;, &quot;Navigation to Program page and Menu Bar Validations&quot;)">
+                  </a> <!-- runScenario("Verify Logout displayed in menu bar", "Navigation to Program page and Menu Bar Validations") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify Logout displayed in menu bar", "Navigation to Program page and Menu Bar Validations")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify edit and delete icon in manage program&quot;, &quot;Manage Program Page validation&quot;)">
+                  </a> <!-- runScenario("Verify edit and delete icon in manage program", "Manage Program Page validation") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify edit and delete icon in manage program", "Manage Program Page validation")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify other pages name displayed in menu bar&quot;, &quot;Navigation to Program page and Menu Bar Validation...)">
+                  </a> <!-- runScenario("Verify other pages name displayed in menu bar", "Navigation to Program page and Menu Bar Validation...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify other pages name displayed in menu bar", "Navigation to Program page and Menu Bar Validations")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify column header name of data table&quot;, &quot;Manage Program Page validation&quot;)">
+                  </a> <!-- runScenario("Verify column header name of data table", "Manage Program Page validation") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify column header name of data table", "Manage Program Page validation")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify other pages name displayed in menu bar&quot;, &quot;Navigation to Program page and Menu Bar Validation...)">
+                  </a> <!-- runScenario("Verify other pages name displayed in menu bar", "Navigation to Program page and Menu Bar Validation...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify other pages name displayed in menu bar", "Navigation to Program page and Menu Bar Validations")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify cancel button&quot;, &quot;Add New Program&quot;)">
+                  </a> <!-- runScenario("Verify cancel button", "Add New Program") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify cancel button", "Add New Program")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify heading in menu bar&quot;, &quot;Navigation to Program page and Menu Bar Validations&quot;)">
+                  </a> <!-- runScenario("Verify heading in menu bar", "Navigation to Program page and Menu Bar Validations") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify heading in menu bar", "Navigation to Program page and Menu Bar Validations")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify Admin is able to save the program details&quot;, &quot;Add New Program&quot;)">
+                  </a> <!-- runScenario("Verify Admin is able to save the program details", "Add New Program") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify Admin is able to save the program details", "Add New Program")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify title of the pop up window&quot;, &quot;Add New Program&quot;)">
+                  </a> <!-- runScenario("Verify title of the pop up window", "Add New Program") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify title of the pop up window", "Add New Program")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify that Admin is able to navigate to Program page&quot;, &quot;Navigation to Program page and Menu Bar Va...)">
+                  </a> <!-- runScenario("Verify that Admin is able to navigate to Program page", "Navigation to Program page and Menu Bar Va...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify that Admin is able to navigate to Program page", "Navigation to Program page and Menu Bar Validations")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify other pages name displayed in menu bar&quot;, &quot;Navigation to Program page and Menu Bar Validation...)">
+                  </a> <!-- runScenario("Verify other pages name displayed in menu bar", "Navigation to Program page and Menu Bar Validation...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify other pages name displayed in menu bar", "Navigation to Program page and Menu Bar Validations")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify other pages name displayed in menu bar&quot;, &quot;Navigation to Program page and Menu Bar Validation...)">
+                  </a> <!-- runScenario("Verify other pages name displayed in menu bar", "Navigation to Program page and Menu Bar Validation...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify other pages name displayed in menu bar", "Navigation to Program page and Menu Bar Validations")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify the Multiple Delete button state&quot;, &quot;Manage Program Page validation&quot;)">
+                  </a> <!-- runScenario("Verify the Multiple Delete button state", "Manage Program Page validation") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify the Multiple Delete button state", "Manage Program Page validation")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify column header name of data table&quot;, &quot;Manage Program Page validation&quot;)">
+                  </a> <!-- runScenario("Verify column header name of data table", "Manage Program Page validation") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify column header name of data table", "Manage Program Page validation")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify add New Program&quot;, &quot;Add New Program&quot;)">
+                  </a> <!-- runScenario("Verify add New Program", "Add New Program") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify add New Program", "Add New Program")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify sub menu displayed in program menu bar&quot;, &quot;Navigation to Program page and Menu Bar Validation...)">
+                  </a> <!-- runScenario("Verify sub menu displayed in program menu bar", "Navigation to Program page and Menu Bar Validation...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify sub menu displayed in program menu bar", "Navigation to Program page and Menu Bar Validations")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="runScenario(&quot;login feature&quot;, &quot;Test login functionality&quot;)">
                   </a> <!-- runScenario("login feature", "Test login functionality") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("login feature","Test login functionality")</span>
+                  <span class="parameters">("login feature", "Test login functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify Sort icon in manage program&quot;, &quot;Manage Program Page validation&quot;)">
+                  </a> <!-- runScenario("Verify Sort icon in manage program", "Manage Program Page validation") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify Sort icon in manage program", "Manage Program Page validation")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify pagination icons below data table in manage program&quot;, &quot;Manage Program Page validation&quot;)">
+                  </a> <!-- runScenario("Verify pagination icons below data table in manage program", "Manage Program Page validation") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify pagination icons below data table in manage program", "Manage Program Page validation")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify empty form submission&quot;, &quot;Add New Program&quot;)">
+                  </a> <!-- runScenario("Verify empty form submission", "Add New Program") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify empty form submission", "Add New Program")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify enter program Description&quot;, &quot;Add New Program&quot;)">
+                  </a> <!-- runScenario("Verify enter program Description", "Add New Program") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify enter program Description", "Add New Program")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify other pages name displayed in menu bar&quot;, &quot;Navigation to Program page and Menu Bar Validation...)">
+                  </a> <!-- runScenario("Verify other pages name displayed in menu bar", "Navigation to Program page and Menu Bar Validation...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify other pages name displayed in menu bar", "Navigation to Program page and Menu Bar Validations")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify column header name of data table&quot;, &quot;Manage Program Page validation&quot;)">
+                  </a> <!-- runScenario("Verify column header name of data table", "Manage Program Page validation") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify column header name of data table", "Manage Program Page validation")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify mandatory fields with red asterisk mark&quot;, &quot;Add New Program&quot;)">
+                  </a> <!-- runScenario("Verify mandatory fields with red asterisk mark", "Add New Program") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify mandatory fields with red asterisk mark", "Add New Program")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify column header name of data table&quot;, &quot;Manage Program Page validation&quot;)">
+                  </a> <!-- runScenario("Verify column header name of data table", "Manage Program Page validation") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify column header name of data table", "Manage Program Page validation")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify close window with &quot;X&quot;&quot;, &quot;Add New Program&quot;)">
+                  </a> <!-- runScenario("Verify close window with "X"", "Add New Program") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify close window with "X"", "Add New Program")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -139,7 +629,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\OVI\AppData\Local\Temp\testng-eclipse-795521023\testng-customsuite.xml</span>
+            <span class="header-content">/private/var/folders/g_/0nhmnxv5743_s030720t0k2w0000gn/T/testng-eclipse-44884271/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -196,16 +686,136 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(31);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'runner.TestRunner')
-data.setCell(0, 3, 4650);
+data.setCell(0, 3, 4545);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'runScenario')
+data.setCell(1, 2, 'runner.TestRunner')
+data.setCell(1, 3, 2026);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'runScenario')
+data.setCell(2, 2, 'runner.TestRunner')
+data.setCell(2, 3, 1931);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'runScenario')
+data.setCell(3, 2, 'runner.TestRunner')
+data.setCell(3, 3, 1064);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'runScenario')
+data.setCell(4, 2, 'runner.TestRunner')
+data.setCell(4, 3, 480);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'runScenario')
+data.setCell(5, 2, 'runner.TestRunner')
+data.setCell(5, 3, 463);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'runScenario')
+data.setCell(6, 2, 'runner.TestRunner')
+data.setCell(6, 3, 409);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'runScenario')
+data.setCell(7, 2, 'runner.TestRunner')
+data.setCell(7, 3, 408);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'runScenario')
+data.setCell(8, 2, 'runner.TestRunner')
+data.setCell(8, 3, 399);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'runScenario')
+data.setCell(9, 2, 'runner.TestRunner')
+data.setCell(9, 3, 335);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'runScenario')
+data.setCell(10, 2, 'runner.TestRunner')
+data.setCell(10, 3, 286);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'runScenario')
+data.setCell(11, 2, 'runner.TestRunner')
+data.setCell(11, 3, 235);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'runScenario')
+data.setCell(12, 2, 'runner.TestRunner')
+data.setCell(12, 3, 183);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'runScenario')
+data.setCell(13, 2, 'runner.TestRunner')
+data.setCell(13, 3, 155);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'runScenario')
+data.setCell(14, 2, 'runner.TestRunner')
+data.setCell(14, 3, 126);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'runScenario')
+data.setCell(15, 2, 'runner.TestRunner')
+data.setCell(15, 3, 122);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'runScenario')
+data.setCell(16, 2, 'runner.TestRunner')
+data.setCell(16, 3, 119);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'runScenario')
+data.setCell(17, 2, 'runner.TestRunner')
+data.setCell(17, 3, 118);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'runScenario')
+data.setCell(18, 2, 'runner.TestRunner')
+data.setCell(18, 3, 108);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'runScenario')
+data.setCell(19, 2, 'runner.TestRunner')
+data.setCell(19, 3, 101);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'runScenario')
+data.setCell(20, 2, 'runner.TestRunner')
+data.setCell(20, 3, 95);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'runScenario')
+data.setCell(21, 2, 'runner.TestRunner')
+data.setCell(21, 3, 95);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'runScenario')
+data.setCell(22, 2, 'runner.TestRunner')
+data.setCell(22, 3, 93);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'runScenario')
+data.setCell(23, 2, 'runner.TestRunner')
+data.setCell(23, 3, 92);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'runScenario')
+data.setCell(24, 2, 'runner.TestRunner')
+data.setCell(24, 3, 90);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'runScenario')
+data.setCell(25, 2, 'runner.TestRunner')
+data.setCell(25, 3, 90);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'runScenario')
+data.setCell(26, 2, 'runner.TestRunner')
+data.setCell(26, 3, 88);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'runScenario')
+data.setCell(27, 2, 'runner.TestRunner')
+data.setCell(27, 3, 81);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'runScenario')
+data.setCell(28, 2, 'runner.TestRunner')
+data.setCell(28, 3, 74);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'runScenario')
+data.setCell(29, 2, 'runner.TestRunner')
+data.setCell(29, 3, 72);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'runScenario')
+data.setCell(30, 2, 'runner.TestRunner')
+data.setCell(30, 3, 68);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 seconds</span>
+              <span class="suite-total-time">Total running time: 14 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -233,16 +843,140 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">runner.TestRunner</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@70aa58e1)</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@22561412)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">runScenario("login feature", "Test login functionality")</span>
-                <span class="method-start">8296 ms</span>
+                <span class="method-start">7111 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify that Admin is able to navigate to Program page", "Navigation to Program page and Menu Bar Va...)</span>
+                <span class="method-start">11830 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify Logout displayed in menu bar", "Navigation to Program page and Menu Bar Validations")</span>
+                <span class="method-start">13767 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify heading in menu bar", "Navigation to Program page and Menu Bar Validations")</span>
+                <span class="method-start">13962 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify other pages name displayed in menu bar", "Navigation to Program page and Menu Bar Validation...)</span>
+                <span class="method-start">14121 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify other pages name displayed in menu bar", "Navigation to Program page and Menu Bar Validation...)</span>
+                <span class="method-start">14250 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify other pages name displayed in menu bar", "Navigation to Program page and Menu Bar Validation...)</span>
+                <span class="method-start">14364 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify other pages name displayed in menu bar", "Navigation to Program page and Menu Bar Validation...)</span>
+                <span class="method-start">14487 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify other pages name displayed in menu bar", "Navigation to Program page and Menu Bar Validation...)</span>
+                <span class="method-start">14595 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify sub menu displayed in program menu bar", "Navigation to Program page and Menu Bar Validation...)</span>
+                <span class="method-start">14688 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify heading in manage program", "Manage Program Page validation")</span>
+                <span class="method-start">14816 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify column header name of data table", "Manage Program Page validation")</span>
+                <span class="method-start">14909 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify column header name of data table", "Manage Program Page validation")</span>
+                <span class="method-start">14992 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify column header name of data table", "Manage Program Page validation")</span>
+                <span class="method-start">15070 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify column header name of data table", "Manage Program Page validation")</span>
+                <span class="method-start">15188 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify the Multiple Delete button state", "Manage Program Page validation")</span>
+                <span class="method-start">15260 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Verify the Search button", "Manage Program Page validation")</span>
+                <span class="method-start">15365 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify checkbox default state beside Program Name column header", "Manage Program Page validation")</span>
+                <span class="method-start">15857 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify Sort icon in manage program", "Manage Program Page validation")</span>
+                <span class="method-start">15954 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify edit and delete icon in manage program", "Manage Program Page validation")</span>
+                <span class="method-start">16053 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify pagination icons below data table in manage program", "Manage Program Page validation")</span>
+                <span class="method-start">16176 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Verify footer message in manage program", "Manage Program Page validation")</span>
+                <span class="method-start">16414 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify add New Program", "Add New Program")</span>
+                <span class="method-start">16816 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify title of the pop up window", "Add New Program")</span>
+                <span class="method-start">17228 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify mandatory fields with red asterisk mark", "Add New Program")</span>
+                <span class="method-start">17307 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify enter program name", "Add New Program")</span>
+                <span class="method-start">17402 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify enter program Description", "Add New Program")</span>
+                <span class="method-start">17743 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify cancel button", "Add New Program")</span>
+                <span class="method-start">18212 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify empty form submission", "Add New Program")</span>
+                <span class="method-start">18501 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify Admin is able to save the program details", "Add New Program")</span>
+                <span class="method-start">19568 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify close window with "X"", "Add New Program")</span>
+                <span class="method-start">21605 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">13089 ms</span>
+                <span class="method-start">22022 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
