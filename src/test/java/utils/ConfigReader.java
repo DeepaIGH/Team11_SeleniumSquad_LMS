@@ -33,7 +33,7 @@ public class ConfigReader {
 			throw new RuntimeException("Browser is  not specified in the Configuration.properties file.");
 	}
 	public static String getExcelFilePath() {
-		String excelfilelpath = prop.getProperty("excelFilePath");
+		String excelfilelpath = prop.getProperty("excelfilepath");
 		if (excelfilelpath != null)
 			return excelfilelpath;
 		else
