@@ -6,12 +6,6 @@ import io.cucumber.java.en.When;
 
 public class EditProgramStep {
 
-	@Given("Admin is on Program page")
-	public void admin_is_on_program_page() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
-
 	@When("Admin clicks on Edit option for particular program")
 	public void admin_clicks_on_edit_option_for_particular_program() {
 	    // Write code here that turns the phrase above into concrete actions

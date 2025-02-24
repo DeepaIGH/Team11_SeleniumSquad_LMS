@@ -16,10 +16,7 @@ public class AddNewProgramSteps {
 	public WebDriver driver = DriverFactory.getdriver();
 	AddNewProgramPage addNewProgramObj = new AddNewProgramPage(driver);
 	ProgramNavigPage programobj = new ProgramNavigPage(driver);//calls the constr in ProgramPageNavi
-	@Given("Admin is on Program page")
-	public void admin_is_on_program_page() {
-		LoggerLoad.info("Admin is in Program Page");
-	}
+	
 
 	@When("Admin clicks on <Add New Program> under the <Program> menu bar")
 	public void admin_clicks_on_add_new_program_under_the_program_menu_bar() {
@@ -32,11 +29,7 @@ public class AddNewProgramSteps {
 		Assert.assertTrue(addNewProgramObj.isPopupWndwDisplayed());
 		LoggerLoad.info("Admin should see pop up window for program details");
 	}
-	@Then("Admin should see window title as {string}")
-	public void admin_should_see_window_title_as(String ExpecWindowTitle) {
-		Assert.assertEquals(addNewProgramObj.getWindowTitle(),ExpecWindowTitle);
-		LoggerLoad.info("Admin should see window title as Program Details");
-	}
+	
 	@Then("Admin should see red asterik mark  beside <mandatory fields> Name Description status")
 	public void admin_should_see_red_asterik_mark_beside_mandatory_fields_name_description_status() {
 		Assert.assertTrue(addNewProgramObj.validateAsterikMark());
