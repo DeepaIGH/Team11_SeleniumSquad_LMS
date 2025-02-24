@@ -13,6 +13,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import pages.TestClassPage;
+import pages.HomePage;
 import utils.Helper;
 
 
@@ -20,6 +21,20 @@ public class testClassStep {
 	
 	public WebDriver driver= DriverFactory.getdriver();
 	TestClassPage testclasspage  = new TestClassPage(driver);
+	HomePage home=new HomePage(DriverFactory.getdriver());
+	LogoutPage logout = new LogoutPage(DriverFactory.getdriver());
+	@Given("Admin Logged on to the system and on Home page")
+	public void admin_logged_on_to_the_system_and_on_home_page() {
+		
+		
+		driver.get(ConfigReader.getHomePageUrl());
+		home.enterUserName();
+	    home.enterPassword();
+	    home.enterRole();
+	    home.loginButtonClicked();
+	    driver = DriverFactory.getdriver();
+	}
+	
 	
 
 	@When("Admin clicks the Class Navigation bar in the Header class page")
