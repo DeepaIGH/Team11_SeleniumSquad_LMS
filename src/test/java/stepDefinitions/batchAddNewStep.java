@@ -20,16 +20,6 @@ public class batchAddNewStep {
 	    
 	}
 
-	@When("Admin clicks {string} on the navigation bar")
-	public void admin_clicks_on_the_navigation_bar(String string) {
-	    
-	}
-
-	@Then("Admin should see sub menu in menu bar as {string}")
-	public void admin_should_see_sub_menu_in_menu_bar_as(String string) {
-	    
-	}
-
 	@When("Admin clicks on {string} under the {string} menu bar")
 	public void admin_clicks_on_under_the_menu_bar(String string, String string2) {
 	   
