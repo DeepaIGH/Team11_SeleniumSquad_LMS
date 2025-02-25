@@ -1,6 +1,5 @@
 package pages;
 
-
 import java.util.Random;
 
 import org.openqa.selenium.By;
@@ -54,8 +53,16 @@ public class ProgramPagePart2 extends BasePage{
 	public By toastCloseIcon=By.cssSelector(".p-toast-icon-close-icon");
 	public By pageNumberButtons=By.cssSelector("button.p-paginator-page");
 	public By activePageNumberButton=By.cssSelector("button.p-paginator-page.p-highlight");
-
-	//public By DeleteButtons=By.cssSelector("div.p-checkbox-box");
+	public By editProgramButton=By.cssSelector("#editProgram");
+	public By editProgramDialog=By.cssSelector("div.p-dialog");
+	public By programEditNameField=By.cssSelector("input#programName");
+	public By programEditDescriptionField=By.cssSelector("input#programDescription");
+	public By editRadioButtons=By.cssSelector(".radio p-radiobutton");
+	public By saveButtonOnEditDialog=By.cssSelector("button#saveProgram");
+	public By cancelButtononEditDialog=By.cssSelector("button[label=\"Cancel\"]");
+	public By astrickForNameField=By.cssSelector("label[for=\"programName\"] span");
+	public By astrickForDescriptionField=By.cssSelector("label[for=\"programDescription\"] span");
+	public By astrickForStatusField=By.cssSelector("label[for=\"online\"] span");
 
 	public void clickOnProgramPageLink() {
 		waitForElementToBeVisible(driver, programlink);
@@ -109,6 +116,12 @@ public class ProgramPagePart2 extends BasePage{
 		driver.findElement(locator).click();
 	}
 
+	public void clickElementByPosition(By locator, Integer position) {
+		waitForElementToBeVisible(driver, locator);
+		waitForElementNotVisible(driver, overlayBackdrop, 30);
+		driver.findElements(locator).get(position-1).click();
+	}
+
 	// Method to get the page title
 	public String getTextForElement(WebElement element) {
 		return element.getText();  // Return text from the given element
@@ -117,7 +130,6 @@ public class ProgramPagePart2 extends BasePage{
 	public void adminIsOncheckBoxes()  {
 		driver.findElement(checkBoxes).isSelected();
 	}
-
 
 	public String getTextForElement(By locator) {
 		String elementText = driver.findElement(locator).getText();
@@ -150,30 +162,41 @@ public class ProgramPagePart2 extends BasePage{
 	}
 
 	public static String getRandomString(Integer noOfChars) {
-        // Define the characters that can be used in the random string
-        String characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-        
-        // Create a Random object
-        Random random = new Random();
-        
-        // StringBuilder to store the random string
-        StringBuilder randomString = new StringBuilder(5);
-        
-        // Generate a random string of 5 characters
-        for (int i = 0; i < noOfChars; i++) {
-            // Get a random index from the characters string
-            int index = random.nextInt(characters.length());
-            // Append the character at the random index
-            randomString.append(characters.charAt(index));
-        }
-        
-        return randomString.toString();
-    }
-	
+		// Define the characters that can be used in the random string
+		String characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+
+		// Create a Random object
+		Random random = new Random();
+
+		// StringBuilder to store the random string
+		StringBuilder randomString = new StringBuilder(5);
+
+		// Generate a random string of 5 characters
+		for (int i = 0; i < noOfChars; i++) {
+			// Get a random index from the characters string
+			int index = random.nextInt(characters.length());
+			// Append the character at the random index
+			randomString.append(characters.charAt(index));
+		}
+		return randomString.toString();
+	}
+
 	public String getLastPageNumber() {
 		String displayedCountText = driver.findElement(currentDisplayedCount).getText();
 		Integer totalNumberOfPrograms = Integer.parseInt(displayedCountText.split(" ")[5]);
 		double result = (double) totalNumberOfPrograms / 10;
 		return Integer.toString((int) Math.ceil(result));
+	}
+
+	public void updateProgramName(String programName) {
+		driver.findElement(programEditDescriptionField).clear();
+		driver.findElement(programEditDescriptionField).sendKeys(programName+" description updated");
+		driver.findElement(saveProgramButton).click();
+	}
+
+	public void updateProgramDescription(String programName) {
+		driver.findElement(programEditNameField).clear();
+		driver.findElement(programEditNameField).sendKeys(programName + " updated");
+		driver.findElement(saveProgramButton).click();
 	}
 }
