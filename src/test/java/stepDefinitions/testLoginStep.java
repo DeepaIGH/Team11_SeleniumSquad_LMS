@@ -12,7 +12,7 @@ import utils.ConfigReader;
 
 public class testLoginStep {
 	public WebDriver driver=DriverFactory.getdriver();
-	TestLoginPage tl=new TestLoginPage(DriverFactory.getdriver());
+	TestLoginPage tl=new TestLoginPage();
 	
 	@Given("User enters the LMS url {string}")
 	public void user_enters_the_lms_url(String string) {

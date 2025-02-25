@@ -5,12 +5,13 @@ import java.time.Duration;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Helper {
 	
-	WebDriver driver;
+	public static WebDriver driver;
 	
 	
 	public Helper(WebDriver driver)
@@ -18,7 +19,7 @@ public class Helper {
 		this.driver = driver;
 	}
 	
-	public String getTitle(WebDriver driver) {
+	public static String getTitle(WebDriver driver) {
 		return driver.getTitle();
 	}
 	
@@ -44,7 +45,7 @@ public class Helper {
 		return flag;
 	}
 	
-	public void selectRadioButtonValue(WebElement element,String valueToBeSelected) {
+	public static void selectRadioButtonValue(WebElement element,String valueToBeSelected) {
 		if(element.getText().equalsIgnoreCase(valueToBeSelected)) {
 			element.click();
 		}
@@ -85,5 +86,33 @@ public class Helper {
 		new WebDriverWait(driver, Duration.ofSeconds(10)).until(ExpectedConditions.visibilityOf(element));
 
 	}
-	
+	 public static boolean webSendKeys(WebElement element, String text) throws Exception 
+	 {
+			try {
+				WebElement ele = new WebDriverWait(driver, Duration.ofSeconds(10)).
+						until(ExpectedConditions.visibilityOf(element));
+			
+					if(ele.isEnabled()) 
+					{
+						try 
+						{
+							ele.clear();
+							ele.sendKeys(text);	
+							return true;
+						}
+						catch(Exception e)
+						{
+							e.printStackTrace();
+							return false;
+						}	
+					}
+					else 
+						throw new Exception("Element is not enabled");
+					
+					}
+			finally {
+			    // Code that will always be executed
+			    System.out.println("Finally block executed");
+			}
+}
 }

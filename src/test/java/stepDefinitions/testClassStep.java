@@ -13,6 +13,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import pages.TestClassPage;
+import pages.HomePage;
 import utils.Helper;
 
 
@@ -20,6 +21,20 @@ public class testClassStep {
 	
 	public WebDriver driver= DriverFactory.getdriver();
 	TestClassPage testclasspage  = new TestClassPage(driver);
+	HomePage home=new HomePage(DriverFactory.getdriver());
+	LogoutPage logout = new LogoutPage(DriverFactory.getdriver());
+	@Given("Admin Logged on to the system and on Home page")
+	public void admin_logged_on_to_the_system_and_on_home_page() {
+		
+		
+		driver.get(ConfigReader.getHomePageUrl());
+		home.enterUserName();
+	    home.enterPassword();
+	    home.enterRole();
+	    home.loginButtonClicked();
+	    driver = DriverFactory.getdriver();
+	}
+	
 	
 
 	@When("Admin clicks the Class Navigation bar in the Header class page")
@@ -401,62 +416,51 @@ Assert.assertTrue(testclasspage.verifyPopUpIsVisible());
 //		testclasspage.btnClass();
 //	}
 
-	@When("Admin clicks Last page link")
-	public void admin_clicks_last_page_link() {
-		testclasspage.clickondoubleNext();
-	}
+//	@When("Admin clicks Last page link")
+//	public void admin_clicks_last_page_link() {
+//		testclasspage.clickondoubleNext();
+//	}
+//
+//	@Then("Admin should see the next page record on the table  with Pagination has next active link enabled")
+//	public void admin_should_see_the_next_page_record_on_the_table_with_pagination_has_next_active_link_enabled() {
+//	    
+//	}
+//
+//	@When("Admin clicks Next page link on the class table")
+//	public void admin_clicks_next_page_link_on_the_class_table() {
+//		testclasspage.clickNextLink();
+//	}
+//
+//	@Given("Admin is on last page of class table  of Class Page")
+//	public void admin_is_on_last_page_of_class_table_of_class_page() {
+//	    // Write code here that turns the phrase above into concrete actions
+//	    throw new io.cucumber.java.PendingException();
+//	}
 
-	@Then("Admin should see the next page record on the table  with Pagination has next active link enabled")
-	public void admin_should_see_the_next_page_record_on_the_table_with_pagination_has_next_active_link_enabled() {
-	    
-	}
-
-	@When("Admin clicks Next page link on the class table")
-	public void admin_clicks_next_page_link_on_the_class_table() {
-		testclasspage.clickNextLink();
-	}
-
-	@Then("Admin should see the last page record on the table with Next page link are disabled")
-	public void admin_should_see_the_last_page_record_on_the_table_with_next_page_link_are_disabled() {
-		
-	}
-
-	@Given("Admin is on last page of class table  of Class Page")
-	public void admin_is_on_last_page_of_class_table_of_class_page() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
-
-	@When("Admin clicks First page link")
-	public void admin_clicks_first_page_link() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
-
-	@Then("Admin should see the previous page record on the table with pagination has previous page link enabled")
-	public void admin_should_see_the_previous_page_record_on_the_table_with_pagination_has_previous_page_link_enabled() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
-
-	@Given("Admin is on Previous class page  of Class Page")
-	public void admin_is_on_previous_class_page_of_class_page() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
-
-	@When("Admin clicks Start page link")
-	public void admin_clicks_start_page_link() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
-
-	@Then("Admin should see the very first page record on the table with Previous page link are disabled")
-	public void admin_should_see_the_very_first_page_record_on_the_table_with_previous_page_link_are_disabled() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
-
+//	@When("Admin clicks First page link")
+//	public void admin_clicks_first_page_link() {
+//	    // Write code here that turns the phrase above into concrete actions
+//	    throw new io.cucumber.java.PendingException();
+//	}
+//
+//	@Then("Admin should see the previous page record on the table with pagination has previous page link enabled")
+//	public void admin_should_see_the_previous_page_record_on_the_table_with_pagination_has_previous_page_link_enabled() {
+//	    // Write code here that turns the phrase above into concrete actions
+//	    throw new io.cucumber.java.PendingException();
+//	}
+//
+//	@Given("Admin is on Previous class page  of Class Page")
+//	public void admin_is_on_previous_class_page_of_class_page() {
+//	    // Write code here that turns the phrase above into concrete actions
+//	    throw new io.cucumber.java.PendingException();
+//	}
+//
+//	@When("Admin clicks Start page link")
+//	public void admin_clicks_start_page_link() {
+//	    // Write code here that turns the phrase above into concrete actions
+//	    throw new io.cucumber.java.PendingException();
+//	}
+//
 
 
 
